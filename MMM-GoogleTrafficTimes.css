@@ -1,0 +1,44 @@
+.CircleIcon {
+    display:inline-block;
+    line-height:0px;
+    
+    border-radius:50%;
+    border:2px solid;
+    background-image: linear-gradient(to right, rgba(169,169,169,0.1), rgba(169,169,169,0.5), rgba(169,169,169,0.1));
+    
+    font-size:16px;
+    text-align: center;
+}
+
+.CircleIcon span {
+    display:inline-block;
+    
+    padding-top:50%;
+    padding-bottom:50%;
+    
+    margin-left:8px;
+    margin-right:8px;
+}
+
+.RedCircleIcon {
+    display:inline-block;
+    line-height:0px;
+
+    border-radius:50%;
+    border:2px solid #F40513;
+    background-image: linear-gradient(to right, rgba(169,169,169,0.1), rgba(169,169,169,0.5), rgba(169,169,169,0.1));
+
+    font-size:16px;
+    text-align: center;
+}
+
+.RedCircleIcon span {
+    display:inline-block;
+
+    padding-top:50%;
+    padding-bottom:50%;
+
+    margin-left:8px;
+    margin-right:8px;
+}
+

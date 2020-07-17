@@ -1,0 +1,20 @@
+{
+  "name": "MMM-GoogleTrafficTimes",
+  "version": "1.0.0",
+  "description": "A module that shows travel times taking into account Google traffic information",
+  "main": "MMM-GoogleTrafficTimes.js",
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-eslint": "latest",
+    "grunt-jsonlint": "latest",
+    "grunt-markdownlint": "^1.0.13",
+    "grunt-stylelint": "latest",
+    "grunt-yamllint": "latest",
+    "stylelint-config-standard": "latest",
+    "time-grunt": "latest"
+  },
+  "dependencies": {
+  }
+}
