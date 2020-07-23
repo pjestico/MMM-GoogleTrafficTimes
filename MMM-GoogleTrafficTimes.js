@@ -7,7 +7,11 @@ Module.register("MMM-GoogleTrafficTimes",{
                 destination1: 'Work:SW1A 2PW',
                 destination2: 'Gym:XXX',
                 destination3: 'School:XXX',
-                updateInterval: 900000
+                updateInterval: 900000,
+		AvoidHighways: false,
+		AvoidTolls: false,
+		unitSystem: 'METRIC'
+
         },
 
         getStyles: function () {
@@ -44,9 +48,11 @@ Module.register("MMM-GoogleTrafficTimes",{
                 var re2 = new RegExp(location2, 'g');
                 var re3 = new RegExp(location3, 'g');
 
+		var AvoidHighways = this.config.AvoidHighways;
+		var AvoidTolls = this.config.AvoidTolls;
+
                 var wrapper = document.createElement("div");
 		wrapper.style = "text-align:left;font-size:0.65em;line-height:normal";
-
 
 		var script = document.createElement("script");
                 script.type = "text/javascript";
@@ -55,7 +61,7 @@ Module.register("MMM-GoogleTrafficTimes",{
                 script.setAttribute('async','');
                 document.body.appendChild(script);
 
-                var self = this;
+                //var self = this;
 
         script.onload = function () {
                 var geocoder = new google.maps.Geocoder;
@@ -69,8 +75,8 @@ Module.register("MMM-GoogleTrafficTimes",{
                 departureTime: new Date(Date.now())
           },
           unitSystem: google.maps.UnitSystem.METRIC,
-          avoidHighways: false,
-          avoidTolls: false
+          avoidHighways: AvoidHighways,
+          avoidTolls: AvoidTolls
         }, function(response, status) {
           if (status !== 'OK') {
             Log.error('Error was: ' + status);
