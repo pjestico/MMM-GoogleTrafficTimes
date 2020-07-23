@@ -22,6 +22,9 @@ var config = {
                 destination1: 'Work:SW1A 2PW',
                 destination2: 'Gym:XXX',
                 destination3: 'Beach:XXX',
+                AvoidHighways: false,
+                AvoidTolls: false,
+
             },
         }
     ]
@@ -32,6 +35,8 @@ var config = {
 * destination1 = This is the first location you need travel times to (required).
 * destination2 = This is the second location you need travel times to (optional).
 * destination3 = This is the third location you need travel times to (optional).
+* AvoidHighways = true or false, controls whether Highways are avoided (true) or utilised (false) in routing.
+* AvoidTolls = true or false, controls whether Tolls are avoided (true) or utilised (false) in routing.
 
 The Destinations need to be entered in the form Label:Address.
 
